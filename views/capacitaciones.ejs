@@ -1,0 +1,447 @@
+<%- include('partials/head', { title: 'Inicio' }) %>
+  <%- include('partials/nav') %>
+    <main>
+      <section class="min-h-screen flex items-center pb-16 md:pt-32 md:pb-24">
+        <div class="container mx-auto px-6 text-center">
+          <h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight">
+            <span class="block text-gray-800 dark:text-gray-200">Formación que Transforma</span>
+            <span
+              class="bg-gradient-to-r from-infinity-cyan via-infinity-blue to-infinity-purple text-transparent bg-clip-text">
+              Tu Infraestructura Tecnológica
+            </span>
+          </h1>
+          <p class="text-lg md:text-xl max-w-3xl mx-auto text-gray-600 dark:text-gray-400 mt-6 mb-10">
+            En Infinity Nexus, creemos que el hardware más potente es inútil sin el conocimiento para explotarlo.
+            Nuestras
+            capacitaciones están diseñadas para empoderar a tu equipo, maximizar el retorno de tu inversión y asegurar
+            una
+            integración tecnológica sin fricciones.
+          </p>
+          <a href="#catalogo-cursos"
+            class="bg-gradient-to-r from-infinity-blue to-infinity-purple text-white font-bold py-3 px-8 rounded-full text-lg hover:shadow-lg hover:shadow-infinity-purple/20 transform hover:-translate-y-1 transition-all duration-300">
+            Explorar Cursos
+          </a>
+        </div>
+      </section>
+
+      <section class="py-20 bg-gray-50 dark:bg-dark-bg">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-100">Beneficios Exclusivos para
+              Socios</h2>
+            <p class="text-lg text-gray-600 dark:text-gray-400 mt-2 max-w-3xl mx-auto">
+              Cada paquete Nexus incluye acceso a nuestra plataforma de formación para potenciar al máximo tu inversión.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto items-stretch">
+
+            <div
+              class="bg-white dark:bg-dark-card rounded-xl shadow-lg p-8 flex flex-col transform transition-all duration-300 hover:-translate-y-2">
+              <div class="text-center mb-6">
+                <ion-icon name="shield-checkmark-outline" class="text-6xl text-infinity-cyan mx-auto"></ion-icon>
+                <h3 class="text-2xl font-bold text-gray-900 dark:text-gray-100 mt-4">Nexus Básico</h3>
+                <p class="font-semibold text-infinity-cyan">Nexus Formación Digital</p>
+              </div>
+              <ul class="space-y-4 text-gray-600 dark:text-gray-400 flex-grow">
+                <li class="flex items-start">
+                  <ion-icon name="checkmark-circle"
+                    class="flex-shrink-0 w-6 h-6 text-infinity-cyan mt-1 mr-3"></ion-icon>
+                  <span>Acceso a <strong>1 webinar técnico mensual</strong> sobre novedades y mejores prácticas.</span>
+                </li>
+                <li class="flex items-start">
+                  <ion-icon name="checkmark-circle"
+                    class="flex-shrink-0 w-6 h-6 text-infinity-cyan mt-1 mr-3"></ion-icon>
+                  <span>Acceso a <strong>1 curso online anual</strong> sobre tecnologías y herramientas básicas.</span>
+                </li>
+              </ul>
+              <a href="/#tienda"
+                class="mt-8 block border-2 border-gray-300 dark:border-gray-600 text-gray-600 dark:text-gray-400 font-semibold py-3 rounded-lg hover:border-infinity-cyan hover:text-infinity-cyan transition duration-300 text-center">
+                Ver Paquetes
+              </a>
+            </div>
+
+            <div
+              class="relative bg-white dark:bg-dark-card rounded-xl shadow-2xl p-8 flex flex-col ring-2 ring-infinity-blue lg:scale-105">
+              <div class="absolute top-0 -translate-y-1/2 w-full flex justify-center">
+                <span class="bg-infinity-blue text-white text-xs font-bold px-4 py-1 rounded-full uppercase">Más
+                  Popular</span>
+              </div>
+              <div class="text-center mb-6">
+                <ion-icon name="school-outline" class="text-6xl text-infinity-blue mx-auto"></ion-icon>
+                <h3 class="text-3xl font-bold text-gray-900 dark:text-gray-100 mt-4">Nexus Pro</h3>
+                <p class="font-semibold text-infinity-blue">Nexus Capacitación Certificada</p>
+              </div>
+              <ul class="space-y-4 text-gray-600 dark:text-gray-400 flex-grow">
+                <li class="flex items-start">
+                  <ion-icon name="checkmark-circle"
+                    class="flex-shrink-0 w-6 h-6 text-infinity-blue mt-1 mr-3"></ion-icon>
+                  <span><strong>2 cursos online anuales</strong> sobre utilitarios avanzados y software de
+                    productividad.</span>
+                </li>
+                <li class="flex items-start">
+                  <ion-icon name="checkmark-circle"
+                    class="flex-shrink-0 w-6 h-6 text-infinity-blue mt-1 mr-3"></ion-icon>
+                  <span>Acceso a la <strong>Certificación Oficial Nexus</strong> avalada por entidad aliada (en
+                    gestión).</span>
+                </li>
+              </ul>
+              <a href="/#tienda"
+                class="mt-8 block bg-gradient-to-r from-infinity-blue to-infinity-purple text-white font-bold py-3 rounded-lg hover:shadow-lg hover:shadow-infinity-purple/20 transform hover:-translate-y-0.5 transition-all duration-300 text-center">
+                Elegir Plan Pro
+              </a>
+            </div>
+
+            <div
+              class="bg-white dark:bg-dark-card rounded-xl shadow-lg p-8 flex flex-col transform transition-all duration-300 hover:-translate-y-2">
+              <div class="text-center mb-6">
+                <ion-icon name="rocket-outline" class="text-6xl text-infinity-purple mx-auto"></ion-icon>
+                <h3 class="text-2xl font-bold text-gray-900 dark:text-gray-100 mt-4">Nexus Elite</h3>
+                <p class="font-semibold text-infinity-purple">Nexus Formación Ejecutiva</p>
+              </div>
+              <ul class="space-y-4 text-gray-600 dark:text-gray-400 flex-grow">
+                <li class="flex items-start">
+                  <ion-icon name="checkmark-circle"
+                    class="flex-shrink-0 w-6 h-6 text-infinity-purple mt-1 mr-3"></ion-icon>
+                  <span><strong>2 talleres presenciales anuales</strong> con capacitadores de nivel
+                    internacional.</span>
+                </li>
+                <li class="flex items-start">
+                  <ion-icon name="checkmark-circle"
+                    class="flex-shrink-0 w-6 h-6 text-infinity-purple mt-1 mr-3"></ion-icon>
+                  <span><strong>Acceso total a la plataforma Nexus</strong> con +20 cursos on-demand y rutas de
+                    aprendizaje.</span>
+                </li>
+              </ul>
+              <a href="/#tienda"
+                class="mt-8 block border-2 border-gray-300 dark:border-gray-600 text-gray-600 dark:text-gray-400 font-semibold py-3 rounded-lg hover:border-infinity-purple hover:text-infinity-purple transition duration-300 text-center">
+                Ver Paquetes
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="py-20 bg-gray-50 dark:bg-dark-bg">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-100">Modalidades Flexibles para tu
+              Empresa</h2>
+            <p class="text-lg text-gray-600 dark:text-gray-400 mt-2 max-w-3xl mx-auto">
+              Aprendizaje a tu ritmo o talleres intensivos. Elige la opción que mejor se adapte a las necesidades de tu
+              equipo.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+
+            <div
+              class="bg-white dark:bg-dark-card rounded-lg shadow-lg p-8 flex flex-col items-center text-center transform hover:-translate-y-2 transition-transform duration-300">
+              <div class="p-4 rounded-full bg-infinity-blue/10 mb-6">
+                <ion-icon name="laptop-outline" class="text-5xl text-infinity-blue"></ion-icon>
+              </div>
+              <h3 class="text-2xl font-bold mb-3 text-gray-900 dark:text-gray-100">Cursos Online On-Demand</h3>
+              <p class="text-gray-600 dark:text-gray-400 mb-6 flex-grow">
+                Accede a nuestra videoteca de cursos en cualquier momento y lugar. Material de alta calidad, ejercicios
+                prácticos y evaluaciones para garantizar el aprendizaje, ideal para equipos con horarios variables.
+              </p>
+              <ul class="space-y-3 text-left text-gray-600 dark:text-gray-400 w-full">
+                <li class="flex items-start"><ion-icon name="checkmark-circle-outline"
+                    class="text-infinity-cyan w-5 h-5 mr-3 mt-1 flex-shrink-0"></ion-icon><span>Acceso ilimitado 24/7 a
+                    la
+                    plataforma.</span></li>
+                <li class="flex items-start"><ion-icon name="checkmark-circle-outline"
+                    class="text-infinity-cyan w-5 h-5 mr-3 mt-1 flex-shrink-0"></ion-icon><span>Rutas de aprendizaje por
+                    rol
+                    (TI, usuario, etc.).</span></li>
+                <li class="flex items-start"><ion-icon name="checkmark-circle-outline"
+                    class="text-infinity-cyan w-5 h-5 mr-3 mt-1 flex-shrink-0"></ion-icon><span>Certificados de
+                    finalización
+                    por curso.</span></li>
+              </ul>
+            </div>
+
+            <div
+              class="bg-white dark:bg-dark-card rounded-lg shadow-lg p-8 flex flex-col items-center text-center transform hover:-translate-y-2 transition-transform duration-300">
+              <div class="p-4 rounded-full bg-infinity-purple/10 mb-6">
+                <ion-icon name="school-outline" class="text-5xl text-infinity-purple"></ion-icon>
+              </div>
+              <h3 class="text-2xl font-bold mb-3 text-gray-900 dark:text-gray-100">Talleres Presenciales y Remotos</h3>
+              <p class="text-gray-600 dark:text-gray-400 mb-6 flex-grow">
+                Formación intensiva y personalizada, impartida por nuestros expertos. Realizamos talleres en tus
+                oficinas o
+                de forma remota para grupos, enfocados en los desafíos y herramientas específicas de tu empresa.
+              </p>
+              <ul class="space-y-3 text-left text-gray-600 dark:text-gray-400 w-full">
+                <li class="flex items-start"><ion-icon name="checkmark-circle-outline"
+                    class="text-infinity-purple w-5 h-5 mr-3 mt-1 flex-shrink-0"></ion-icon><span>Contenido 100%
+                    adaptado a
+                    tu stack tecnológico.</span></li>
+                <li class="flex items-start"><ion-icon name="checkmark-circle-outline"
+                    class="text-infinity-purple w-5 h-5 mr-3 mt-1 flex-shrink-0"></ion-icon><span>Interacción directa y
+                    resolución de dudas en tiempo real.</span></li>
+                <li class="flex items-start"><ion-icon name="checkmark-circle-outline"
+                    class="text-infinity-purple w-5 h-5 mr-3 mt-1 flex-shrink-0"></ion-icon><span>Modalidad "workshop"
+                    con
+                    enfoque práctico (hands-on).</span></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section id="catalogo-cursos" class="py-20">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-100">Catálogo de Cursos Destacados
+            </h2>
+            <p class="text-lg text-gray-600 dark:text-gray-400 mt-2 max-w-3xl mx-auto">
+              Desde ciberseguridad esencial hasta la optimización del rendimiento. Estos son algunos de nuestros cursos
+              más
+              solicitados por las PyMEs.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <div
+              class="group bg-white dark:bg-dark-card rounded-lg shadow-md hover:shadow-xl hover:shadow-infinity-cyan/20 transition-all duration-300 overflow-hidden flex flex-col">
+              <div class="p-6 flex-grow">
+                <ion-icon name="shield-checkmark-outline" class="text-4xl text-infinity-cyan mb-4"></ion-icon>
+                <h3 class="text-xl font-bold text-gray-900 dark:text-gray-100 mb-2">Ciberseguridad Esencial para PyMEs
+                </h3>
+                <p class="text-gray-600 dark:text-gray-400 mb-4">
+                  Protege los activos digitales de tu empresa. Aprende a identificar amenazas, configurar firewalls y
+                  crear
+                  políticas de seguridad robustas.
+                </p>
+              </div>
+              <div class="p-6 bg-gray-50 dark:bg-dark-bg/50">
+                <a href="#" class="font-semibold text-infinity-blue hover:text-infinity-purple transition-colors">Ver
+                  temario completo →</a>
+              </div>
+            </div>
+
+            <div
+              class="group bg-white dark:bg-dark-card rounded-lg shadow-md hover:shadow-xl hover:shadow-infinity-blue/20 transition-all duration-300 overflow-hidden flex flex-col">
+              <div class="p-6 flex-grow">
+                <ion-icon name="hardware-chip-outline" class="text-4xl text-infinity-blue mb-4"></ion-icon>
+                <h3 class="text-xl font-bold text-gray-900 dark:text-gray-100 mb-2">Optimización de Workstations</h3>
+                <p class="text-gray-600 dark:text-gray-400 mb-4">
+                  Saca el máximo provecho a tus equipos. Técnicas de mantenimiento preventivo, actualización de
+                  componentes
+                  y configuración de software para un rendimiento óptimo.
+                </p>
+              </div>
+              <div class="p-6 bg-gray-50 dark:bg-dark-bg/50">
+                <a href="#" class="font-semibold text-infinity-blue hover:text-infinity-purple transition-colors">Ver
+                  temario completo →</a>
+              </div>
+            </div>
+
+            <div
+              class="group bg-white dark:bg-dark-card rounded-lg shadow-md hover:shadow-xl hover:shadow-infinity-purple/20 transition-all duration-300 overflow-hidden flex flex-col">
+              <div class="p-6 flex-grow">
+                <ion-icon name="cloud-outline" class="text-4xl text-infinity-purple mb-4"></ion-icon>
+                <h3 class="text-xl font-bold text-gray-900 dark:text-gray-100 mb-2">Microsoft 365: Colaboración y
+                  Productividad</h3>
+                <p class="text-gray-600 dark:text-gray-400 mb-4">
+                  Domina el ecosistema de Microsoft. Desde la gestión de archivos en OneDrive y SharePoint hasta la
+                  colaboración en tiempo real con Teams.
+                </p>
+              </div>
+              <div class="p-6 bg-gray-50 dark:bg-dark-bg/50">
+                <a href="#" class="font-semibold text-infinity-blue hover:text-infinity-purple transition-colors">Ver
+                  temario completo →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-20">
+        <div class="container mx-auto px-6 max-w-5xl">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-100">Lo que dicen Nuestros Socios
+            </h2>
+            <p class="text-lg text-gray-600 dark:text-gray-400 mt-2">La confianza de quienes ya trabajan con nosotros es
+              nuestro mayor orgullo.</p>
+          </div>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div class="bg-white dark:bg-dark-card p-8 rounded-lg shadow-lg">
+              <div class="flex text-yellow-400 mb-4">
+                <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon
+                  name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon>
+              </div>
+              <blockquote class="text-gray-600 dark:text-gray-400 italic">"La capacitación sobre ciberseguridad fue un
+                antes y un después para nuestro equipo. Clara, concisa y directamente aplicable a los desafíos de una
+                PyME como la nuestra."</blockquote>
+              <cite class="block font-bold mt-4 text-gray-800 dark:text-gray-200 not-italic">Mariana López</cite>
+              <span class="text-sm text-gray-500">Gerente de TI, Logística Andina S.A.</span>
+            </div>
+            <div class="bg-white dark:bg-dark-card p-8 rounded-lg shadow-lg">
+              <div class="flex text-yellow-400 mb-4">
+                <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon
+                  name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon>
+              </div>
+              <blockquote class="text-gray-600 dark:text-gray-400 italic">"Gracias a la formación de Infinity Nexus, la
+                adopción de los nuevos equipos fue increíblemente rápida y sin interrupciones. El soporte post-curso es
+                excelente."</blockquote>
+              <cite class="block font-bold mt-4 text-gray-800 dark:text-gray-200 not-italic">Carlos Herrera</cite>
+              <span class="text-sm text-gray-500">Director de Operaciones, Creativa Publicidad</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="inscripcion" class="py-20 bg-gray-50 dark:bg-dark-bg">
+        <div class="container mx-auto px-6">
+          <div class="max-w-4xl mx-auto bg-white dark:bg-dark-card p-8 md:p-12 rounded-xl shadow-2xl">
+            <div class="text-center">
+              <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-100">Da el Siguiente Paso</h2>
+              <p class="text-lg text-gray-600 dark:text-gray-400 mt-2 max-w-2xl mx-auto">
+                ¿Listo para potenciar a tu equipo? Completa el formulario para solicitar una capacitación a medida o una
+                asesoría sin cargo.
+              </p>
+            </div>
+
+            <form action="/solicitar-capacitacion" method="POST" class="mt-10 space-y-6">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div>
+                  <label for="nombre_empresa" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Nombre
+                    de la Empresa</label>
+                  <input type="text" name="nombre_empresa" id="nombre_empresa" required
+                    class="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 shadow-sm focus:border-infinity-blue focus:ring-infinity-blue">
+                </div>
+                <div>
+                  <label for="nombre_contacto" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Tu
+                    Nombre</label>
+                  <input type="text" name="nombre_contacto" id="nombre_contacto" required
+                    class="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 shadow-sm focus:border-infinity-blue focus:ring-infinity-blue">
+                </div>
+              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div>
+                  <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Email
+                    Corporativo</label>
+                  <input type="email" name="email" id="email" required
+                    class="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 shadow-sm focus:border-infinity-blue focus:ring-infinity-blue">
+                </div>
+                <div>
+                  <label for="telefono"
+                    class="block text-sm font-medium text-gray-700 dark:text-gray-300">Teléfono</label>
+                  <input type="tel" name="telefono" id="telefono"
+                    class="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 shadow-sm focus:border-infinity-blue focus:ring-infinity-blue">
+                </div>
+              </div>
+              <div>
+                <label for="interes" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Área de Interés
+                  Principal</label>
+                <select id="interes" name="interes"
+                  class="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 py-2 px-3 shadow-sm focus:border-infinity-blue focus:outline-none focus:ring-infinity-blue">
+                  <option>Capacitación en Ciberseguridad</option>
+                  <option>Optimización de Hardware y Software</option>
+                  <option>Productividad (Microsoft 365, etc.)</option>
+                  <option>Formación Personalizada para mi Equipo</option>
+                  <option>Asesoría Tecnológica Estratégica</option>
+                  <option>Otro</option>
+                </select>
+              </div>
+              <div>
+                <label for="mensaje" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Describe
+                  brevemente tu necesidad</label>
+                <textarea id="mensaje" name="mensaje" rows="4"
+                  class="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 shadow-sm focus:border-infinity-blue focus:ring-infinity-blue"></textarea>
+              </div>
+              <div class="text-center">
+                <button type="submit"
+                  class="w-full sm:w-auto bg-gradient-to-r from-infinity-blue to-infinity-purple text-white font-bold py-3 px-10 rounded-full text-lg hover:shadow-lg hover:shadow-infinity-purple/20 transform hover:-translate-y-1 transition-all duration-300">
+                  Enviar Solicitud
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-20 bg-gray-50 dark:bg-dark-bg">
+        <div class="container mx-auto px-6 max-w-4xl">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-100">Resolvemos tus Dudas</h2>
+            <p class="text-lg text-gray-600 dark:text-gray-400 mt-2">
+              Preguntas frecuentes sobre nuestro programa de capacitaciones.
+            </p>
+          </div>
+          <div class="space-y-4" id="faq-accordion">
+            <div class="bg-white dark:bg-dark-card rounded-lg shadow-sm">
+              <button class="faq-toggle flex justify-between items-center w-full p-6 text-left">
+                <span class="text-lg font-semibold text-gray-800 dark:text-gray-200">¿Quiénes son los
+                  instructores?</span>
+                <ion-icon name="chevron-down-outline"
+                  class="w-6 h-6 transition-transform text-infinity-blue"></ion-icon>
+              </button>
+              <div class="faq-content max-h-0 overflow-hidden transition-max-height duration-500 ease-in-out">
+                <p class="p-6 pt-0 text-gray-600 dark:text-gray-400">Nuestros instructores son ingenieros y técnicos
+                  certificados con años de experiencia en el campo, no solo en la enseñanza, sino también en la
+                  implementación de soluciones de hardware y software en entornos empresariales reales.</p>
+              </div>
+            </div>
+            <div class="bg-white dark:bg-dark-card rounded-lg shadow-sm">
+              <button class="faq-toggle flex justify-between items-center w-full p-6 text-left">
+                <span class="text-lg font-semibold text-gray-800 dark:text-gray-200">¿Podemos solicitar una capacitación
+                  personalizada?</span>
+                <ion-icon name="chevron-down-outline"
+                  class="w-6 h-6 transition-transform text-infinity-blue"></ion-icon>
+              </button>
+              <div class="faq-content max-h-0 overflow-hidden transition-max-height duration-500 ease-in-out">
+                <p class="p-6 pt-0 text-gray-600 dark:text-gray-400">¡Absolutamente! Es una de nuestras especialidades.
+                  Podemos diseñar un taller o ruta de aprendizaje a medida, centrado en las tecnologías, software y
+                  flujos
+                  de trabajo específicos de tu empresa para un impacto máximo.</p>
+              </div>
+            </div>
+            <div class="bg-white dark:bg-dark-card rounded-lg shadow-sm">
+              <button class="faq-toggle flex justify-between items-center w-full p-6 text-left">
+                <span class="text-lg font-semibold text-gray-800 dark:text-gray-200">¿Se entregan certificados al
+                  finalizar?</span>
+                <ion-icon name="chevron-down-outline"
+                  class="w-6 h-6 transition-transform text-infinity-blue"></ion-icon>
+              </button>
+              <div class="faq-content max-h-0 overflow-hidden transition-max-height duration-500 ease-in-out">
+                <p class="p-6 pt-0 text-gray-600 dark:text-gray-400">Sí, todos los participantes que completen
+                  satisfactoriamente un curso o taller, ya sea online o presencial, recibirán un certificado digital de
+                  finalización emitido por Infinity Nexus, validando las habilidades adquiridas.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const faqToggles = document.querySelectorAll('.faq-toggle');
+          faqToggles.forEach(toggle => {
+            toggle.addEventListener('click', () => {
+              const content = toggle.nextElementSibling;
+              const icon = toggle.querySelector('ion-icon');
+
+              if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+                icon.style.transform = 'rotate(0deg)';
+              } else {
+                // Cierra todos los demás
+                document.querySelectorAll('.faq-content').forEach(item => item.style.maxHeight = null);
+                document.querySelectorAll('.faq-toggle ion-icon').forEach(item => item.style.transform = 'rotate(0deg)');
+
+                // Abre el actual
+                content.style.maxHeight = content.scrollHeight + "px";
+                icon.style.transform = 'rotate(180deg)';
+              }
+            });
+          });
+        });
+      </script>
+
+    </main>
+    <%- include('partials/footer') %>

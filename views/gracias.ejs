@@ -1,0 +1,26 @@
+<%- include('partials/head', { title: '¡Gracias por tu Compra!' }) %>
+  <%- include('partials/nav') %>
+
+    <main>
+      <section class="h-screen flex items-center justify-center text-center bg-gray-50 dark:bg-dark-bg px-6">
+        <div>
+          <div
+            class="w-24 h-24 mx-auto flex items-center justify-center bg-green-100 dark:bg-green-900/50 rounded-full mb-6">
+            <ion-icon name="checkmark-done-circle-outline" class="text-7xl text-green-500"></ion-icon>
+          </div>
+          <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-gray-100">¡Gracias por tu compra!</h1>
+          <p class="text-lg text-gray-600 dark:text-gray-400 mt-4 max-w-2xl mx-auto">
+            Hemos recibido tu pedido correctamente. En breve recibirás un email de confirmación con todos los detalles.
+          </p>
+          <p class="mt-2 text-sm text-gray-500">Número de Pedido: #NEXUS-<%= Math.floor(10000 + Math.random() * 90000)
+              %>
+          </p>
+          <a href="/tienda"
+            class="mt-10 inline-block bg-gradient-to-r from-infinity-blue to-infinity-purple text-white font-bold py-3 px-8 rounded-full text-lg">
+            Volver a la Tienda
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <%- include('partials/footer') %>

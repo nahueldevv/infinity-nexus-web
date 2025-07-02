@@ -1,0 +1,605 @@
+<%- include('partials/head', { title: 'Inicio' }) %>
+  <%- include('partials/nav') %>
+
+    <main>
+
+      <section id="home" class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+
+        <div class="absolute inset-0 w-full h-full -z-10">
+          <div
+            class="absolute -top-20 -left-20 w-72 h-72 md:w-96 md:h-96 bg-infinity-cyan rounded-full opacity-20 dark:opacity-30 filter blur-3xl animate-blob">
+          </div>
+          <div
+            class="absolute -bottom-20 -right-10 w-72 h-72 md:w-96 md:h-96 bg-infinity-purple rounded-full opacity-20 dark:opacity-30 filter blur-3xl animate-blob animation-delay-2000">
+          </div>
+          <div
+            class="absolute -bottom-40 left-20 w-60 h-60 md:w-80 md:h-80 bg-infinity-blue rounded-full opacity-10 dark:opacity-20 filter blur-3xl animate-blob animation-delay-4000">
+          </div>
+        </div>
+
+        <div class="relative z-10 container mx-auto px-6 text-center">
+          <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold mb-4 leading-tight">
+            <span
+              class="bg-gradient-to-r from-infinity-cyan via-infinity-blue to-infinity-purple text-transparent bg-clip-text drop-shadow-sm">
+              Potenciamos el Futuro
+            </span>
+            <span class="block text-gray-800 dark:text-gray-200">Tecnológico de tu Empresa.</span>
+          </h1>
+          <p class="text-lg md:text-xl max-w-3xl mx-auto text-gray-600 dark:text-gray-400 mb-8">
+            Somos tu socio estratégico en hardware. Soluciones a medida, desde equipos de alto rendimiento hasta
+            periféricos, diseñadas exclusivamente para PyMEs.
+          </p>
+          <a href="/tienda"
+            class="bg-gradient-to-r from-infinity-blue to-infinity-purple text-white font-bold py-3 px-8 rounded-full text-lg hover:shadow-lg hover:shadow-infinity-purple/20 transform hover:-translate-y-1 transition-all duration-300">
+            Explorar Soluciones
+          </a>
+        </div>
+      </section>
+
+      <section class="py-10 bg-white dark:bg-dark-card border-y border-gray-200 dark:border-gray-700">
+        <div
+          class="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
+
+          <ul
+            class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_svg]:h-10 animate-infinite-scroll group-hover:paused">
+
+            <li class="flex items-center shrink-0">
+              <ion-icon name="airplane-outline" class="w-8 h-8 text-infinity-blue"></ion-icon>
+              <span class="ml-3 font-semibold text-gray-700 dark:text-gray-300">Envíos a todo el país</span>
+            </li>
+            <li class="flex items-center shrink-0">
+              <ion-icon name="shield-checkmark-outline" class="w-8 h-8 text-infinity-cyan"></ion-icon>
+              <span class="ml-3 font-semibold text-gray-700 dark:text-gray-300">Pagos 100% Seguros</span>
+            </li>
+            <li class="flex items-center shrink-0">
+              <ion-icon name="card-outline" class="w-8 h-8 text-infinity-purple"></ion-icon>
+              <span class="ml-3 font-semibold text-gray-700 dark:text-gray-300">Múltiples Métodos de Pago</span>
+            </li>
+            <li class="flex items-center shrink-0">
+              <ion-icon name="headset-outline" class="w-8 h-8 text-infinity-blue"></ion-icon>
+              <span class="ml-3 font-semibold text-gray-700 dark:text-gray-300">Soporte Prioritario 24/7</span>
+            </li>
+            <li class="flex items-center shrink-0">
+              <ion-icon name="ribbon-outline" class="w-8 h-8 text-infinity-cyan"></ion-icon>
+              <span class="ml-3 font-semibold text-gray-700 dark:text-gray-300">Garantía Extendida</span>
+            </li>
+            <li class="flex items-center shrink-0">
+              <ion-icon name="refresh-circle-outline" class="w-8 h-8 text-infinity-purple"></ion-icon>
+              <span class="ml-3 font-semibold text-gray-700 dark:text-gray-300">Reembolsos en 30 Días</span>
+            </li>
+            <li class="flex items-center shrink-0">
+              <ion-icon name="bulb-outline" class="w-8 h-8 text-infinity-blue"></ion-icon>
+              <span class="ml-3 font-semibold text-gray-700 dark:text-gray-300">Asesoramiento Personalizado</span>
+            </li>
+
+          </ul>
+        </div>
+      </section>
+
+      <section id="tienda" class="py-20 bg-gray-50 dark:bg-dark-bg">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-100">Conviértase en Socio Nexus</h2>
+            <p class="text-lg text-gray-600 dark:text-gray-400 mt-2 max-w-3xl mx-auto">
+              Ofrecemos más que hardware. Únase a nuestros planes para acceder a precios de mayorista, soporte
+              prioritario y beneficios exclusivos.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+
+            <div
+              class="bg-white dark:bg-dark-card rounded-lg shadow-md p-8 flex flex-col hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+              <h3 class="text-2xl font-bold text-center text-gray-900 dark:text-gray-100">Nexus Básico</h3>
+              <p class="text-center text-gray-500 dark:text-gray-400 mt-1">El punto de partida ideal.</p>
+              <ul class="mt-8 space-y-4 text-gray-600 dark:text-gray-400 flex-grow">
+                <li class="flex items-start">
+                  <ion-icon name="checkmark-circle-outline"
+                    class="flex-shrink-0 w-6 h-6 text-infinity-cyan mt-1 mr-3"></ion-icon>
+                  <span>Asesoría gratuita para seleccionar el equipo ideal.</span>
+                </li>
+                <li class="flex items-start">
+                  <ion-icon name="checkmark-circle-outline"
+                    class="flex-shrink-0 w-6 h-6 text-infinity-cyan mt-1 mr-3"></ion-icon>
+                  <span>1 asistencia remota gratuita al año.</span>
+                </li>
+                <li class="flex items-start">
+                  <ion-icon name="checkmark-circle-outline"
+                    class="flex-shrink-0 w-6 h-6 text-infinity-cyan mt-1 mr-3"></ion-icon>
+                  <span>Licencias Windows 11 Pro y Antivirus.</span>
+                </li>
+                <li class="flex items-start">
+                  <ion-icon name="checkmark-circle-outline"
+                    class="flex-shrink-0 w-6 h-6 text-infinity-cyan mt-1 mr-3"></ion-icon>
+                  <span>Acceso a 1 webinar técnico mensual.</span>
+                </li>
+              </ul>
+              <a href="#soporte"
+                class="mt-8 block border-2 border-infinity-blue text-infinity-blue font-semibold py-3 rounded-lg hover:bg-infinity-blue hover:text-white dark:hover:text-white transition duration-300 text-center">
+                Consultar
+              </a>
+            </div>
+
+            <div
+              class="relative bg-white dark:bg-dark-card rounded-lg shadow-xl p-8 flex flex-col ring-2 ring-infinity-blue scale-105">
+              <div class="absolute top-0 -translate-y-1/2 w-full flex justify-center">
+                <span class="bg-infinity-blue text-white text-xs font-bold px-4 py-1 rounded-full uppercase">Más
+                  Popular</span>
+              </div>
+              <h3 class="text-3xl font-bold text-center text-gray-900 dark:text-gray-100">Nexus Pro</h3>
+              <p class="text-center text-gray-500 dark:text-gray-400 mt-1">La elección para empresas en crecimiento.</p>
+              <ul class="mt-8 space-y-4 text-gray-600 dark:text-gray-400 flex-grow">
+                <li class="flex items-start">
+                  <ion-icon name="star" class="flex-shrink-0 w-6 h-6 text-infinity-blue mt-1 mr-3"></ion-icon>
+                  <span><b>10% de descuento</b> en equipos y 1 año de garantía extendida.</span>
+                </li>
+                <li class="flex items-start">
+                  <ion-icon name="star" class="flex-shrink-0 w-6 h-6 text-infinity-blue mt-1 mr-3"></ion-icon>
+                  <span>Soporte preferencial con <b>respuesta en &lt;4hs</b> para emergencias.</span>
+                </li>
+                <li class="flex items-start">
+                  <ion-icon name="star" class="flex-shrink-0 w-6 h-6 text-infinity-blue mt-1 mr-3"></ion-icon>
+                  <span>Instalación de equipos y configuración inicial incluida.</span>
+                </li>
+                <li class="flex items-start">
+                  <ion-icon name="star" class="flex-shrink-0 w-6 h-6 text-infinity-blue mt-1 mr-3"></ion-icon>
+                  <span>Licencias Microsoft 365 para Empresas por 12 meses.</span>
+                </li>
+                <li class="flex items-start">
+                  <ion-icon name="star" class="flex-shrink-0 w-6 h-6 text-infinity-blue mt-1 mr-3"></ion-icon>
+                  <span>2 cursos online anuales sobre utilitarios y ciberseguridad.</span>
+                </li>
+              </ul>
+              <a href="#soporte"
+                class="mt-8 block bg-gradient-to-r from-infinity-blue to-infinity-purple text-white font-bold py-3 px-8 rounded-lg hover:shadow-lg hover:shadow-infinity-purple/20 transform hover:-translate-y-0.5 transition-all duration-300 text-center">
+                Solicitar Pro
+              </a>
+            </div>
+
+            <div
+              class="bg-white dark:bg-dark-card rounded-lg shadow-md p-8 flex flex-col hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+              <h3 class="text-2xl font-bold text-center text-gray-900 dark:text-gray-100">Nexus Elite</h3>
+              <p class="text-center text-gray-500 dark:text-gray-400 mt-1">Soporte y beneficios premium.</p>
+              <ul class="mt-8 space-y-4 text-gray-600 dark:text-gray-400 flex-grow">
+                <li class="flex items-start">
+                  <ion-icon name="rocket" class="flex-shrink-0 w-6 h-6 text-infinity-purple mt-1 mr-3"></ion-icon>
+                  <span><b>15% de descuento</b> en todos los productos y 25% en actualizaciones.</span>
+                </li>
+                <li class="flex items-start">
+                  <ion-icon name="rocket" class="flex-shrink-0 w-6 h-6 text-infinity-purple mt-1 mr-3"></ion-icon>
+                  <span>Soporte Total con visitas técnicas preventivas bimestrales.</span>
+                </li>
+                <li class="flex items-start">
+                  <ion-icon name="rocket" class="flex-shrink-0 w-6 h-6 text-infinity-purple mt-1 mr-3"></ion-icon>
+                  <span>Ejecutivo de cuenta asignado exclusivamente a su empresa.</span>
+                </li>
+                <li class="flex items-start">
+                  <ion-icon name="rocket" class="flex-shrink-0 w-6 h-6 text-infinity-purple mt-1 mr-3"></ion-icon>
+                  <span>Acceso a talleres presenciales y plataforma con +20 cursos.</span>
+                </li>
+              </ul>
+              <a href="#soporte"
+                class="mt-8 block bg-gradient-to-r from-infinity-blue to-infinity-purple text-white font-bold py-3 px-8 rounded-lg hover:shadow-lg hover:shadow-infinity-purple/20 transform hover:-translate-y-0.5 transition-all duration-300 text-center">
+                Consultar
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section id="product-categories" class="py-10">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-100">Un Catálogo para Cada Necesidad
+            </h2>
+            <p class="text-lg text-gray-600 dark:text-gray-400 mt-2 max-w-3xl mx-auto">
+              Soluciones de hardware potentes y fiables, seleccionadas para el entorno empresarial.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+            <a href="/tienda#PCs"
+              class="group block rounded-xl transform transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-infinity-cyan/10">
+              <div class="bg-white dark:bg-dark-card p-8 rounded-xl h-full flex flex-col items-center text-center">
+                <div class="p-5 rounded-full bg-infinity-cyan/10 mb-6">
+                  <ion-icon name="desktop-outline" class="text-5xl text-infinity-cyan"></ion-icon>
+                </div>
+                <h3 class="text-2xl font-semibold text-gray-900 dark:text-gray-100">
+                  Computadoras a Medida
+                </h3>
+                <p class="text-gray-600 dark:text-gray-400 mt-2 flex-grow">
+                  Estaciones de trabajo y servidores optimizados para las cargas de trabajo de tu empresa.
+                </p>
+                <span class="mt-6 font-semibold text-infinity-cyan group-hover:underline">Ver más →</span>
+              </div>
+            </a>
+
+            <a href="/tienda#Notebooks"
+              class="group block rounded-xl transform transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-infinity-blue/10">
+              <div class="bg-white dark:bg-dark-card p-8 rounded-xl h-full flex flex-col items-center text-center">
+                <div class="p-5 rounded-full bg-infinity-blue/10 mb-6">
+                  <ion-icon name="laptop-outline" class="text-5xl text-infinity-blue"></ion-icon>
+                </div>
+                <h3 class="text-2xl font-semibold text-gray-900 dark:text-gray-100">
+                  Notebooks Profesionales
+                </h3>
+                <p class="text-gray-600 dark:text-gray-400 mt-2 flex-grow">
+                  Potencia y portabilidad para equipos que necesitan movilidad sin sacrificar rendimiento.
+                </p>
+                <span class="mt-6 font-semibold text-infinity-blue group-hover:underline">Ver más →</span>
+              </div>
+            </a>
+
+            <a href="/tienda#Perif"
+              class="group block rounded-xl transform transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-infinity-purple/10">
+              <div class="bg-white dark:bg-dark-card p-8 rounded-xl h-full flex flex-col items-center text-center">
+                <div class="p-5 rounded-full bg-infinity-purple/10 mb-6">
+                  <ion-icon name="headset-outline" class="text-5xl text-infinity-purple"></ion-icon>
+                </div>
+                <h3 class="text-2xl font-semibold text-gray-900 dark:text-gray-100">
+                  Periféricos y Redes
+                </h3>
+                <p class="text-gray-600 dark:text-gray-400 mt-2 flex-grow">
+                  Todo lo que necesitas para construir un ecosistema de trabajo productivo y conectado.
+                </p>
+                <span class="mt-6 font-semibold text-infinity-purple group-hover:underline">Ver más →</span>
+              </div>
+            </a>
+
+          </div>
+        </div>
+      </section>
+
+      <section id="PCs" class="py-20 bg-white dark:bg-dark-bg">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-100">Paquetes Tematicos</h2>
+            <p class="text-lg text-gray-600 dark:text-gray-400 mt-2">Estaciones de trabajo a medida y los mejores
+              componentes para tu infraestructura.</p>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div
+              class="bg-white dark:bg-dark-card rounded-lg shadow-md overflow-hidden transform hover:-translate-y-1.5 transition-transform duration-300">
+              <img src="/images/banner1.png" alt="PC de Escritorio Empresarial" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">PACK INFINITY BUSINESS
+                </h3>
+                <p class="text-gray-600 dark:text-gray-400 mt-2 text-sm">Optimiza la productividad de tu empresa con
+                  equipos confiables, rápidos y diseñados para flujos de trabajo de oficina exigentes.
+
+                </p>
+                <div class="flex justify-between items-center mt-4">
+                  <span class="text-2xl font-bold text-gray-900 dark:text-gray-100">$899.99</span>
+                  <a href="index.html#soporte"
+                    class="bg-infinity-blue text-white px-4 py-2 rounded-lg hover:bg-infinity-purple transition duration-300 text-sm">Añadir
+                    a Cotización</a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-white dark:bg-dark-card rounded-lg shadow-md overflow-hidden transform hover:-translate-y-1.5 transition-transform duration-300">
+              <img src="/images/banner1.png" alt="Servidor de Archivos PyME" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">PACK INFINITY CREATIVE
+                </h3>
+                <p class="text-gray-600 dark:text-gray-400 mt-2 text-sm">Potencia la creatividad de tu equipo con
+                  hardware pensado para edición de imágenes, videos, modelado 3D y producción de contenido multimedia
+
+                </p>
+                <div class="flex justify-between items-center mt-4">
+                  <span class="text-2xl font-bold text-gray-900 dark:text-gray-100">$2,599,599.99</span>
+                  <a href="index.html#soporte"
+                    class="bg-infinity-blue text-white px-4 py-2 rounded-lg hover:bg-infinity-purple transition duration-300 text-sm">Añadir
+                    a Cotización</a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-white dark:bg-dark-card rounded-lg shadow-md overflow-hidden transform hover:-translate-y-1.5 transition-transform duration-300">
+              <img src="/images/banner1.png" alt="Kit de Actualización de Componentes" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">PACK INFINITY DATA
+                </h3>
+                <p class="text-gray-600 dark:text-gray-400 mt-2 text-sm">Robustez, velocidad y capacidad de
+                  procesamiento masivo para equipos de IT, análisis de datos o servidores internos.
+
+                </p>
+                <div class="flex justify-between items-center mt-4">
+                  <span class="text-2xl font-bold text-gray-900 dark:text-gray-100">Desde $199.99</span>
+                  <a href="index.html#soporte"
+                    class="bg-infinity-blue text-white px-4 py-2 rounded-lg hover:bg-infinity-purple transition duration-300 text-sm">Añadir
+                    a Cotización</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-20">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-100">Formación para Cada Rol de tu
+              Empresa</h2>
+            <p class="text-lg text-gray-600 dark:text-gray-400 mt-2 max-w-3xl mx-auto">
+              Maximizamos el potencial de cada miembro de tu equipo.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto ">
+            <div
+              class="bg-white dark:bg-dark-card p-8 rounded-xl shadow-lg text-center hover:shadow-xl hover:shadow-infinity-cyan/20 transition-all duration-300 overflow-hidden">
+              <ion-icon name="server-outline" class="text-5xl text-infinity-blue mx-auto mb-4"></ion-icon>
+              <h3 class="text-xl font-bold mb-2 text-gray-900 dark:text-gray-100">Equipos de TI</h3>
+              <p class="text-gray-600 dark:text-gray-400">Capacitaciones técnicas avanzadas para administrar, mantener y
+                asegurar la nueva infraestructura con total confianza.</p>
+            </div>
+            <div
+              class="bg-white dark:bg-dark-card p-8 rounded-xl shadow-lg text-center hover:shadow-xl hover:shadow-infinity-cyan/20 transition-all duration-300 overflow-hidden">
+              <ion-icon name="people-outline" class="text-5xl text-infinity-cyan mx-auto mb-4"></ion-icon>
+              <h3 class="text-xl font-bold mb-2 text-gray-900 dark:text-gray-100">Usuarios Finales</h3>
+              <p class="text-gray-600 dark:text-gray-400">Cursos prácticos para que tus empleados dominen el nuevo
+                software y hardware, aumentando la productividad desde el primer día.</p>
+            </div>
+            <div
+              class="bg-white dark:bg-dark-card p-8 rounded-xl shadow-lg text-center hover:shadow-xl hover:shadow-infinity-cyan/20 transition-all duration-300 overflow-hidden">
+              <ion-icon name="analytics-outline" class="text-5xl text-infinity-purple mx-auto mb-4"></ion-icon>
+              <h3 class="text-xl font-bold mb-2 text-gray-900 dark:text-gray-100">Gerencia y Directivos</h3>
+              <p class="text-gray-600 dark:text-gray-400">Seminarios estratégicos sobre ciberseguridad, tendencias
+                tecnológicas y cómo alinear la inversión en TI con los objetivos del negocio.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="sobre-nosotros" class="py-20">
+        <div class="container mx-auto px-6">
+          <div class="flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2">
+              <h2 class="text-3xl md:text-4xl font-bold mb-4">Tu Socio Tecnológico Estratégico</h2>
+              <p class="text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">
+                En Infinity Nexus, entendemos que cada empresa es única. No solo vendemos hardware, construimos
+                relaciones
+                a largo plazo. Nuestro enfoque B2B nos permite ofrecer precios competitivos de mayorista, un catálogo de
+                productos curado para el entorno profesional y un nivel de servicio que va más allá de la venta.
+              </p>
+              <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+                Nuestra misión es simple: proveer la infraestructura tecnológica que permita a las PyMEs crecer, innovar
+                y
+                competir en el mercado actual.
+              </p>
+            </div>
+            <div class="md:w-1/2">
+              <img src="/images/sb2.jpg" alt="Equipo de Infinity Nexus" class="rounded-lg shadow-lg w-full">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="capacitaciones" class="py-20 bg-gray-50 dark:bg-dark-bg">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-100">Más que Hardware: Conocimiento y
+              Soporte</h2>
+            <p class="text-gray-600 dark:text-gray-400 mt-2">Maximizamos tu inversión con capacitación y un soporte
+              proactivo.</p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+
+            <a href="/capacitaciones"
+              class="block rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
+              <div class="bg-white dark:bg-dark-card p-8 rounded-lg shadow-md h-full text-center">
+                <ion-icon name="videocam-outline" class="text-5xl text-infinity-blue mx-auto mb-4"></ion-icon>
+                <h3 class="text-2xl font-bold mb-2 text-gray-900 dark:text-gray-100">Cursos y Capacitaciones</h3>
+                <p class="text-gray-600 dark:text-gray-400">Ofrecemos formaciones online y presenciales para que tu
+                  equipo domine el nuevo hardware y software, asegurando una transición fluida y una productividad
+                  inmediata.</p>
+              </div>
+            </a>
+
+            <a href="/soporte"
+              class="block rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
+              <div class="bg-white dark:bg-dark-card p-8 rounded-lg shadow-md h-full text-center">
+                <ion-icon name="headset-outline" class="text-5xl text-infinity-purple mx-auto mb-4"></ion-icon>
+                <h3 class="text-2xl font-bold mb-2 text-gray-900 dark:text-gray-100">Soporte Avanzado</h3>
+                <p class="text-gray-600 dark:text-gray-400">Accede a nuestro equipo de expertos y al asistente virtual
+                  NexiBot para resolver dudas, gestionar garantías y optimizar el rendimiento de tus equipos de forma
+                  prioritaria.</p>
+              </div>
+            </a>
+
+          </div>
+        </div>
+      </section>
+
+      <section id="sucursales" class="py-20 bg-white dark:bg-dark-bg">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-100">Visita Nuestras Sedes en el
+              Norte</h2>
+            <p class="text-lg text-gray-600 dark:text-gray-400 mt-2 max-w-3xl mx-auto">
+              Con presencia en puntos clave del NOA, estamos cerca tuyo para ofrecerte atención personalizada y soporte
+              local.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+
+            <div
+              class="bg-white dark:bg-dark-card rounded-xl shadow-lg p-8 flex flex-col transform transition-all duration-300 hover:-translate-y-2 hover:shadow-infinity-cyan/20">
+              <div class="flex-grow">
+                <span
+                  class="inline-block bg-infinity-cyan/10 text-infinity-cyan text-sm font-semibold px-3 py-1 rounded-full mb-4">Oficina
+                  Comercial y Showroom</span>
+                <h3 class="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-3">Salta, Capital</h3>
+                <p class="text-gray-600 dark:text-gray-400 flex items-center mb-2">
+                  <ion-icon name="location-outline" class="w-5 h-5 mr-3 flex-shrink-0"></ion-icon>
+                  Av. Belgrano 555, A4400
+                </p>
+                <p class="text-gray-600 dark:text-gray-400 flex items-center">
+                  <ion-icon name="call-outline" class="w-5 h-5 mr-3 flex-shrink-0"></ion-icon>
+                  (0387) 455-1234
+                </p>
+              </div>
+              <a href="/sucursales" class="mt-6 block font-semibold text-infinity-cyan hover:underline">
+                Conocer más →
+              </a>
+            </div>
+
+            <div
+              class="bg-white dark:bg-dark-card rounded-xl shadow-lg p-8 flex flex-col transform transition-all duration-300 hover:-translate-y-2 hover:shadow-infinity-blue/20">
+              <div class="flex-grow">
+                <span
+                  class="inline-block bg-infinity-blue/10 text-infinity-blue text-sm font-semibold px-3 py-1 rounded-full mb-4">Centro
+                  Logístico y Soporte</span>
+                <h3 class="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-3">San Miguel de Tucumán</h3>
+                <p class="text-gray-600 dark:text-gray-400 flex items-center mb-2">
+                  <ion-icon name="location-outline" class="w-5 h-5 mr-3 flex-shrink-0"></ion-icon>
+                  Av. Mate de Luna 2200, T4000
+                </p>
+                <p class="text-gray-600 dark:text-gray-400 flex items-center">
+                  <ion-icon name="call-outline" class="w-5 h-5 mr-3 flex-shrink-0"></ion-icon>
+                  (0381) 455-5678
+                </p>
+              </div>
+              <a href="/sucursales" class="mt-6 block font-semibold text-infinity-blue hover:underline">
+                Conocer más →
+              </a>
+            </div>
+
+          </div>
+
+          <div class="text-center mt-16">
+            <a href="/sucursales"
+              class="inline-block bg-gradient-to-r from-infinity-blue to-infinity-purple text-white font-bold py-4 px-10 rounded-full text-lg hover:shadow-lg hover:shadow-infinity-purple/20 transform hover:-translate-y-1 transition-all duration-300">
+              Ver Todas las Sucursales
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="soporte" class="py-20 bg-gray-50 dark:bg-dark-bg">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-100">
+              Conoce a <span
+                class="bg-gradient-to-r from-infinity-cyan via-infinity-blue to-infinity-purple text-transparent bg-clip-text">NexiBot</span>
+            </h2>
+            <p class="text-lg text-gray-600 dark:text-gray-400 mt-2 max-w-2xl mx-auto">
+              Tu asistente virtual 24/7 para consultas técnicas, seguimiento de pedidos y cotizaciones al instante.
+            </p>
+          </div>
+
+          <div
+            class="max-w-3xl mx-auto bg-white dark:bg-dark-card rounded-xl shadow-2xl flex flex-col h-[600px] border border-gray-200 dark:border-gray-800">
+
+            <div
+              class="bg-gray-100 dark:bg-gray-900/50 p-4 rounded-t-xl flex items-center border-b border-gray-200 dark:border-gray-800">
+              <div class="relative flex items-center justify-center">
+                <div class="w-3 h-3 bg-green-400 rounded-full"></div>
+                <div class="w-3 h-3 bg-green-400 rounded-full absolute animate-ping"></div>
+              </div>
+              <h3 class="font-bold text-gray-800 dark:text-gray-200 ml-3">NexiBot - Asistente Virtual</h3>
+              <span class="ml-auto text-xs text-green-500 font-semibold">En línea</span>
+            </div>
+
+            <div id="chat-window" class="flex-1 p-6 overflow-y-auto space-y-6">
+              <div class="flex items-start gap-3">
+                <div class="bg-infinity-blue/10 text-infinity-blue p-2 rounded-full">
+                  <ion-icon name="hardware-chip-outline" class="w-6 h-6"></ion-icon>
+                </div>
+                <div
+                  class="bg-gradient-to-r from-infinity-blue to-infinity-purple text-white p-4 rounded-lg rounded-bl-none max-w-md shadow-md">
+                  <p class="text-sm">
+                    ¡Hola! Soy <strong>NexiBot</strong>. Estoy aquí para ayudar a tu empresa.
+                  </p>
+                  <p class="text-sm mt-2">
+                    Puedes preguntarme sobre:
+                  </p>
+                  <ul class="text-xs list-disc list-inside mt-2 space-y-1">
+                    <li>Cotizar equipos y periféricos</li>
+                    <li>Soporte técnico de primer nivel</li>
+                    <li>Estado de un pedido</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3 justify-end">
+                <div
+                  class="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 p-4 rounded-lg rounded-br-none max-w-md">
+                  <p class="text-sm">
+                    Necesito cotizar 15 notebooks profesionales para desarrollo de software.
+                  </p>
+                </div>
+                <div class="bg-gray-200 dark:bg-gray-700 p-2 rounded-full">
+                  <ion-icon name="person-outline" class="w-6 h-6 text-gray-600 dark:text-gray-300"></ion-icon>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <div class="bg-infinity-blue/10 text-infinity-blue p-2 rounded-full">
+                  <ion-icon name="hardware-chip-outline" class="w-6 h-6"></ion-icon>
+                </div>
+                <div class="bg-gray-200 dark:bg-gray-700 p-4 rounded-lg rounded-bl-none max-w-xs">
+                  <div class="flex items-center space-x-1">
+                    <span class="w-2 h-2 bg-gray-500 rounded-full animate-pulse" style="animation-delay: 0s;"></span>
+                    <span class="w-2 h-2 bg-gray-500 rounded-full animate-pulse" style="animation-delay: 0.2s;"></span>
+                    <span class="w-2 h-2 bg-gray-500 rounded-full animate-pulse" style="animation-delay: 0.4s;"></span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="p-4 bg-white dark:bg-dark-card rounded-b-xl border-t border-gray-200 dark:border-gray-700">
+              <div class="flex items-center gap-3">
+                <input id="chat-input" type="text" placeholder="Escribe tu consulta aquí..."
+                  class="w-full px-4 py-3 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 border border-transparent focus:outline-none focus:ring-2 focus:ring-infinity-blue" />
+                <button id="send-button"
+                  class="flex-shrink-0 bg-gradient-to-r from-infinity-blue to-infinity-purple text-white p-3 rounded-lg hover:shadow-lg hover:shadow-infinity-purple/20 transform hover:-translate-y-0.5 transition-all duration-300">
+                  <ion-icon name="send-outline" class="w-6 h-6"></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <div class="fixed bottom-6 right-6 z-50">
+      <button id="nexibot-button"
+        class="bg-gradient-to-r from-infinity-blue to-infinity-purple text-white w-16 h-16 rounded-full shadow-lg flex items-center justify-center transform hover:scale-110 transition-transform">
+        <ion-icon name="chatbubbles-outline" class="w-8 h-8"></ion-icon>
+      </button>
+    </div>
+
+    <div id="nexibot-chat"
+      class="hidden fixed bottom-24 right-6 w-80 md:w-96 bg-white dark:bg-dark-card rounded-lg shadow-2xl z-50 transform origin-bottom-right transition-all duration-300">
+      <div class="p-4 bg-gray-100 dark:bg-gray-900 rounded-t-lg flex justify-between items-center">
+        <h3 class="font-bold text-lg">Asistente NexiBot</h3>
+        <button id="close-chat-button" class="p-1 rounded-full hover:bg-gray-300 dark:hover:bg-gray-600">
+          <ion-icon name="close-outline" class="w-6 h-6"></ion-icon>
+        </button>
+      </div>
+      <div class="p-4 h-80 overflow-y-auto">
+        <div class="flex mb-4">
+          <div class="bg-infinity-blue text-white p-3 rounded-lg max-w-xs">
+            <p class="text-sm">¡Hola! Soy NexiBot, tu asistente virtual. ¿Cómo puedo ayudarte hoy con tus necesidades de
+              hardware?</p>
+          </div>
+        </div>
+        <div class="flex justify-end mb-4">
+          <div class="bg-gray-200 dark:bg-gray-700 p-3 rounded-lg max-w-xs">
+            <p class="text-sm">Quisiera cotizar 10 computadoras para mi empresa.</p>
+          </div>
+        </div>
+      </div>
+      <div class="p-4 border-t border-gray-200 dark:border-gray-700">
+        <input type="text" placeholder="Escribe tu mensaje..."
+          class="w-full p-2 border rounded-lg bg-gray-100 dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-infinity-blue">
+      </div>
+    </div>
+    <%- include('partials/footer') %>

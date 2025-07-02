@@ -1,0 +1,322 @@
+<%- include('partials/head', { title: 'Inicio' }) %>
+  <%- include('partials/nav') %>
+    <main>
+      <section class="pt-28 md:pt-40 pb-16 md:pb-24">
+        <div class="container mx-auto px-6">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+            <div class="text-center lg:text-left">
+              <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight">
+                <span class="block text-gray-800 dark:text-gray-200">Hardware de Alto Rendimiento</span>
+                <span
+                  class="bg-gradient-to-r from-infinity-cyan via-infinity-blue to-infinity-purple text-transparent bg-clip-text">
+                  Exclusivo para Empresas.
+                </span>
+              </h1>
+              <p class="mt-6 text-lg md:text-xl max-w-2xl mx-auto lg:mx-0 text-gray-600 dark:text-gray-400">
+                Explore nuestro catálogo seleccionado de workstations, notebooks profesionales y periféricos diseñados
+                para ofrecer la máxima fiabilidad y potencia que su negocio necesita para escalar.
+              </p>
+              <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                <a href="#catalogo"
+                  class="bg-gradient-to-r from-infinity-blue to-infinity-purple text-white font-bold py-4 px-8 rounded-full text-lg hover:shadow-lg hover:shadow-infinity-purple/20 transform hover:-translate-y-1 transition-all duration-300">
+                  Explorar Productos
+                </a>
+                <a href="/soporte"
+                  class="bg-gray-200 dark:bg-dark-card text-gray-800 dark:text-gray-200 font-bold py-4 px-8 rounded-full text-lg hover:bg-gray-300 dark:hover:bg-gray-700 transition-all duration-300">
+                  Solicitar Asesoría
+                </a>
+              </div>
+            </div>
+
+            <div class="relative hidden lg:flex items-center justify-center">
+              <div
+                class="absolute w-72 h-72 bg-infinity-cyan rounded-full opacity-20 dark:opacity-30 filter blur-3xl animate-blob">
+              </div>
+              <div
+                class="absolute w-72 h-72 bg-infinity-purple rounded-full opacity-20 dark:opacity-30 filter blur-3xl animate-blob animation-delay-4000 top-20 right-10">
+              </div>
+
+              <img src="/images/banner1.png" alt="Estación de trabajo moderna y potente para empresas"
+                class="relative rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-500 z-10">
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section id="product-categories" class="py-10">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-100">Un Catálogo para Cada Necesidad
+            </h2>
+            <p class="text-lg text-gray-600 dark:text-gray-400 mt-2 max-w-3xl mx-auto">
+              Soluciones de hardware potentes y fiables, seleccionadas para el entorno empresarial.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+            <a href="#PCs"
+              class="group block rounded-xl transform transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-infinity-cyan/10">
+              <div class="bg-white dark:bg-dark-card p-8 rounded-xl h-full flex flex-col items-center text-center">
+                <div class="p-5 rounded-full bg-infinity-cyan/10 mb-6">
+                  <ion-icon name="desktop-outline" class="text-5xl text-infinity-cyan"></ion-icon>
+                </div>
+                <h3 class="text-2xl font-semibold text-gray-900 dark:text-gray-100">
+                  Computadoras a Medida
+                </h3>
+                <p class="text-gray-600 dark:text-gray-400 mt-2 flex-grow">
+                  Estaciones de trabajo y servidores optimizados para las cargas de trabajo de tu empresa.
+                </p>
+                <span class="mt-6 font-semibold text-infinity-cyan group-hover:underline">Ver más →</span>
+              </div>
+            </a>
+
+            <a href="#Notebooks"
+              class="group block rounded-xl transform transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-infinity-blue/10">
+              <div class="bg-white dark:bg-dark-card p-8 rounded-xl h-full flex flex-col items-center text-center">
+                <div class="p-5 rounded-full bg-infinity-blue/10 mb-6">
+                  <ion-icon name="laptop-outline" class="text-5xl text-infinity-blue"></ion-icon>
+                </div>
+                <h3 class="text-2xl font-semibold text-gray-900 dark:text-gray-100">
+                  Notebooks Profesionales
+                </h3>
+                <p class="text-gray-600 dark:text-gray-400 mt-2 flex-grow">
+                  Potencia y portabilidad para equipos que necesitan movilidad sin sacrificar rendimiento.
+                </p>
+                <span class="mt-6 font-semibold text-infinity-blue group-hover:underline">Ver más →</span>
+              </div>
+            </a>
+
+            <a href="#Perif"
+              class="group block rounded-xl transform transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-infinity-purple/10">
+              <div class="bg-white dark:bg-dark-card p-8 rounded-xl h-full flex flex-col items-center text-center">
+                <div class="p-5 rounded-full bg-infinity-purple/10 mb-6">
+                  <ion-icon name="headset-outline" class="text-5xl text-infinity-purple"></ion-icon>
+                </div>
+                <h3 class="text-2xl font-semibold text-gray-900 dark:text-gray-100">
+                  Periféricos y Redes
+                </h3>
+                <p class="text-gray-600 dark:text-gray-400 mt-2 flex-grow">
+                  Todo lo que necesitas para construir un ecosistema de trabajo productivo y conectado.
+                </p>
+                <span class="mt-6 font-semibold text-infinity-purple group-hover:underline">Ver más →</span>
+              </div>
+            </a>
+
+          </div>
+        </div>
+      </section>
+
+      <section id="PCs" class="py-20 bg-white dark:bg-dark-bg">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-100">Computadoras Armadas y
+              Componentes</h2>
+            <p class="text-lg text-gray-600 dark:text-gray-400 mt-2">Estaciones de trabajo a medida y los mejores
+              componentes para tu infraestructura.</p>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div
+              class="bg-white dark:bg-dark-card rounded-lg shadow-md overflow-hidden transform hover:-translate-y-1.5 transition-transform duration-300">
+              <img src="/images/pc4.jpg" alt="PC de Escritorio Empresarial" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">Estación de Trabajo Corporativa</h3>
+                <p class="text-gray-600 dark:text-gray-400 mt-2 text-sm">Procesador Intel Core i5, 16GB RAM, SSD de
+                  512GB. Ideal para tareas de oficina y multitarea eficiente.</p>
+                <div class="flex justify-between items-center mt-4">
+                  <span class="text-2xl font-bold text-gray-900 dark:text-gray-100">$899.99</span>
+                  <div class="mt-4 flex gap-3">
+                    <a href="/producto?sku=NEX-WKST-CORP-01"
+                      class="flex-1 border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 px-4 py-2 rounded-lg hover:border-infinity-blue hover:text-infinity-blue transition duration-300 text-sm font-semibold flex items-center justify-center gap-2">
+                      <ion-icon name="eye-outline"></ion-icon>
+                      Ver
+                    </a>
+                    <button
+                      class="add-to-cart-btn bg-infinity-blue text-white px-4 py-2 rounded-lg hover:bg-infinity-purple transition duration-300 text-sm"
+                      data-sku="NEX-WKST-CORP-01" data-name="Estación de Trabajo Corporativa" data-price="899.99"
+                      data-image="/images/pc4.jpg">Añadir
+                      a Cotización</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-white dark:bg-dark-card rounded-lg shadow-md overflow-hidden transform hover:-translate-y-1.5 transition-transform duration-300">
+              <img src="/images/pc4.jpg" alt="Servidor de Archivos PyME" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">Servidor Nexus SmallBiz</h3>
+                <p class="text-gray-600 dark:text-gray-400 mt-2 text-sm">Almacenamiento seguro y acceso rápido para
+                  todos tus datos empresariales. Incluye RAID 1.</p>
+                <div class="flex justify-between items-center mt-4">
+                  <span class="text-2xl font-bold text-gray-900 dark:text-gray-100">$1,599.99</span>
+                  <button
+                    class="add-to-cart-btn bg-infinity-blue text-white px-4 py-2 rounded-lg hover:bg-infinity-purple transition duration-300 text-sm"
+                    data-sku="NEX-SERVER-SB" data-name="Estación de Trabajo Corporativa" data-price="1599.99"
+                    data-image="/images/pc4.jpg">Añadir
+                    a Cotización</button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-white dark:bg-dark-card rounded-lg shadow-md overflow-hidden transform hover:-translate-y-1.5 transition-transform duration-300">
+              <img src="/images/pc4.jpg" alt="Kit de Actualización de Componentes" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">Kit de Actualización Pro</h3>
+                <p class="text-gray-600 dark:text-gray-400 mt-2 text-sm">Mejora el rendimiento de tus equipos existentes
+                  con RAM, SSD y tarjetas gráficas.</p>
+                <div class="flex justify-between items-center mt-4">
+                  <span class="text-2xl font-bold text-gray-900 dark:text-gray-100">Desde $199.99</span>
+                  <button
+                    class="add-to-cart-btn bg-infinity-blue text-white px-4 py-2 rounded-lg hover:bg-infinity-purple transition duration-300 text-sm"
+                    data-sku="KIT-ACTUALIZACION-PRO" data-name="Kit de Actualización Pro" data-price="199.99"
+                    data-image="/images/pc4.jpg">Añadir
+                    a Cotización</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="Notebooks" class="py-20 bg-gray-50 dark:bg-dark-bg">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-100">Notebooks Profesionales</h2>
+            <p class="text-lg text-gray-600 dark:text-gray-400 mt-2">Potencia y movilidad para ejecutivos y equipos en
+              campo.</p>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- #### -->
+            <div
+              class="bg-white dark:bg-dark-card rounded-lg shadow-md overflow-hidden transform hover:-translate-y-1.5 transition-transform duration-300">
+              <img src="/images/mac3.jpg" alt="Laptop Empresarial Ligera" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">Notebook Ultra-Delgada Nexus</h3>
+                <p class="text-gray-600 dark:text-gray-400 mt-2 text-sm">Diseño elegante, procesador Intel Core i7, 16GB
+                  RAM, 512GB SSD. Perfecta para el profesional moderno.</p>
+                <div class="flex justify-between items-center mt-4">
+                  <span class="text-2xl font-bold text-gray-900 dark:text-gray-100">$1,199.99</span>
+                  <button
+                    class="add-to-cart-btn bg-infinity-blue text-white px-4 py-2 rounded-lg hover:bg-infinity-purple transition duration-300 text-sm"
+                    data-sku="NEX-NB-UD" data-name="Notebook Ultra-Delgada" data-price="1199.99"
+                    data-image="/images/mac3.jpg">Añadir
+                    a Cotización</button>
+                </div>
+              </div>
+            </div>
+            <!-- #### -->
+            <div
+              class="bg-white dark:bg-dark-card rounded-lg shadow-md overflow-hidden transform hover:-translate-y-1.5 transition-transform duration-300">
+              <img src="/images/mac3.jpg" alt="Laptop Empresarial Ligera" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">Notebook Ultra-Delgada Nexus</h3>
+                <p class="text-gray-600 dark:text-gray-400 mt-2 text-sm">Diseño elegante, procesador Intel Core i7, 16GB
+                  RAM, 512GB SSD. Perfecta para el profesional moderno.</p>
+                <div class="flex justify-between items-center mt-4">
+                  <span class="text-2xl font-bold text-gray-900 dark:text-gray-100">$1,199.99</span>
+                  <button
+                    class="add-to-cart-btn bg-infinity-blue text-white px-4 py-2 rounded-lg hover:bg-infinity-purple transition duration-300 text-sm"
+                    data-sku="NEX-NB-UD" data-name="Notebook Ultra-Delgada" data-price="1199.99"
+                    data-image="/images/mac3.jpg">Añadir
+                    a Cotización</button>
+                </div>
+              </div>
+            </div>
+            <!-- #### -->
+            <div
+              class="bg-white dark:bg-dark-card rounded-lg shadow-md overflow-hidden transform hover:-translate-y-1.5 transition-transform duration-300">
+              <img src="/images/mac3.jpg" alt="Laptop Empresarial Ligera" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">Notebook Ultra-Delgada Nexus</h3>
+                <p class="text-gray-600 dark:text-gray-400 mt-2 text-sm">Diseño elegante, procesador Intel Core i7, 16GB
+                  RAM, 512GB SSD. Perfecta para el profesional moderno.</p>
+                <div class="flex justify-between items-center mt-4">
+                  <span class="text-2xl font-bold text-gray-900 dark:text-gray-100">$1,199.99</span>
+                  <button
+                    class="add-to-cart-btn bg-infinity-blue text-white px-4 py-2 rounded-lg hover:bg-infinity-purple transition duration-300 text-sm"
+                    data-sku="NEX-NB-UD" data-name="Notebook Ultra-Delgada" data-price="1199.99"
+                    data-image="/images/mac3.jpg">Añadir
+                    a Cotización</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="Perif" class="py-20 bg-white dark:bg-dark-bg">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-100">Periféricos y Soluciones de Red
+            </h2>
+            <p class="text-lg text-gray-600 dark:text-gray-400 mt-2">Todo lo necesario para completar tu ecosistema de
+              trabajo.</p>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div
+              class="bg-white dark:bg-dark-card rounded-lg shadow-md overflow-hidden transform hover:-translate-y-1.5 transition-transform duration-300">
+              <img src="/images/perif2.jpg" alt="Monitor Profesional" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">Monitor Profesional 24" IPS</h3>
+                <p class="text-gray-600 dark:text-gray-400 mt-2 text-sm">Pantalla Full HD con panel IPS para colores
+                  precisos y amplios ángulos de visión.</p>
+                <div class="flex justify-between items-center mt-4">
+                  <span class="text-2xl font-bold text-gray-900 dark:text-gray-100">$249.99</span>
+                  <a href="index.html#soporte"
+                    class="bg-infinity-blue text-white px-4 py-2 rounded-lg hover:bg-infinity-purple transition duration-300 text-sm">Añadir
+                    a Cotización</a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-white dark:bg-dark-card rounded-lg shadow-md overflow-hidden transform hover:-translate-y-1.5 transition-transform duration-300">
+              <img src="/images/perif2.jpg" alt="Router Empresarial" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">Router WiFi 6 para Empresas</h3>
+                <p class="text-gray-600 dark:text-gray-400 mt-2 text-sm">Conexión ultra-rápida y segura para toda su red
+                  empresarial. Soporta múltiples dispositivos.</p>
+                <div class="flex justify-between items-center mt-4">
+                  <span class="text-2xl font-bold text-gray-900 dark:text-gray-100">$179.99</span>
+                  <a href="index.html#soporte"
+                    class="bg-infinity-blue text-white px-4 py-2 rounded-lg hover:bg-infinity-purple transition duration-300 text-sm">Añadir
+                    a Cotización</a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-white dark:bg-dark-card rounded-lg shadow-md overflow-hidden transform hover:-translate-y-1.5 transition-transform duration-300">
+              <img src="/images/perif2.jpg" alt="Combo Teclado y Mouse Ergonómico" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">Combo Ergonómico Premium</h3>
+                <p class="text-gray-600 dark:text-gray-400 mt-2 text-sm">Teclado y mouse diseñados para la comodidad y
+                  productividad en largas jornadas de trabajo.</p>
+                <div class="flex justify-between items-center mt-4">
+                  <span class="text-2xl font-bold text-gray-900 dark:text-gray-100">$89.99</span>
+                  <a href="index.html#soporte"
+                    class="bg-infinity-blue text-white px-4 py-2 rounded-lg hover:bg-infinity-purple transition duration-300 text-sm">Añadir
+                    a Cotización</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-20 bg-gray-100 dark:bg-dark-bg">
+        <div class="container mx-auto px-6">
+          <div class="text-center bg-white dark:bg-dark-card p-10 rounded-xl shadow-lg">
+            <h2 class="text-3xl font-bold text-gray-900 dark:text-gray-100">¿No encuentras lo que buscas?</h2>
+            <p class="text-lg text-gray-600 dark:text-gray-400 mt-4 max-w-2xl mx-auto">Nuestro equipo de expertos puede
+              diseñar una solución de hardware completamente a medida para las necesidades específicas de tu empresa.
+            </p>
+            <a href="/soporte"
+              class="mt-8 inline-block bg-gradient-to-r from-infinity-blue to-infinity-purple text-white font-bold py-3 px-8 rounded-lg text-lg hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300">Solicitar
+              Asesoría Personalizada</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <%- include('partials/footer') %>
