@@ -94,8 +94,8 @@ function generateMainViewHtml(product) {
                         <div class="my-6 py-6 border-y dark:border-gray-800"><span class="text-5xl font-bold text-gray-900 dark:text-gray-100">$${product.price.toFixed(
                           2
                         )}</span><span class="text-sm text-gray-500 ml-2">IVA incluido</span></div>
-                        <button class="add-to-cart-btn w-full bg-gradient-to-r from-infinity-blue to-infinity-purple text-white font-bold py-4 rounded-xl text-lg flex items-center justify-center gap-3 transform hover:-translate-y-1 transition-transform shadow-lg hover:shadow-2xl hover:shadow-infinity-purple/30" data-sku="NEX-WKST-CORP-01" data-name="Estación de Trabajo Corporativa" data-price="899.99"
-                      data-image="/images/pc4.jpg"><ion-icon name="cart-outline" class="w-6 h-6"></ion-icon>Añadir a Cotización</button>
+                        <button class="add-to-cart-btn w-full bg-gradient-to-r from-infinity-blue to-infinity-purple text-white font-bold py-4 rounded-xl text-lg flex items-center justify-center gap-3 transform hover:-translate-y-1 transition-transform shadow-lg hover:shadow-2xl hover:shadow-infinity-purple/30" data-sku="${product.sku}" data-name="${product.name}" data-price="${product.price}"
+                      data-image="${product.images[0]}"><ion-icon name="cart-outline" class="w-6 h-6"></ion-icon>Añadir a Cotización</button>
                     </div>
                 </div>
             </section>`;
