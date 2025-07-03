@@ -206,7 +206,7 @@ function generateRelatedProductsHtml(related) {
                     ${related
                       .map(
                         (p) => `
-                        <a href="/producto.html?sku=${p.sku}" class="group block">
+                        <a href="/producto?sku=${p.sku}" class="group block">
                             <div class="bg-white dark:bg-dark-card rounded-xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 overflow-hidden h-full flex flex-col">
                                 <img src="${p.images[0]}" alt="${p.name}" class="w-full h-56 object-cover">
                                 <div class="p-6 flex flex-col flex-grow">
